@@ -131,7 +131,8 @@
         closeButtonOptions: {
           text: 'Закрыть',
           onClick: () => {
-            this.showInfo()
+            this.showInfo();
+            this.chartType = ""
           },
         },
         submitButtonOptions: {
@@ -140,6 +141,7 @@
           onClick: () => {
             this.addToList()
             this.closeModal()
+            this.chartType = ""
           },
         },
       }
