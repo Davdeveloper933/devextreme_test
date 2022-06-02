@@ -61,8 +61,6 @@
                 :data-source="pieData"
                 palette="Bright"
                 title="Area of Countries"
-                @point-click="pointClickHandler($event)"
-                @legend-click="legendClickHandler($event)"
         >
           <DxSeries
                   argument-field="Группа"
@@ -141,7 +139,7 @@
           onClick: () => {
             this.addToList()
             this.closeModal()
-            this.chartType = ""
+            this.chartType = "";
           },
         },
       }
